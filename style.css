@@ -1,0 +1,102 @@
+.slides{
+    width: 100%;
+    position: relative;
+}
+
+.slides .slide{
+    display: none;
+}
+
+.slides .slide img{
+    width: 100%;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+.slides .navigation{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    }
+
+.slides .navigation .prev, .slides .navigation .next{
+    cursor: pointer;
+    padding: 16px;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    background: rgba(0,0,0,0.2);
+    user-select: none;
+    transition: 0.6s ease;
+    }
+    
+    .slides .navigation .prev:hover, .slides .navigation .next:hover{
+    background: rgba(0,0,0,1);
+}
+
+.clock {
+    font-size: 60px;
+    color: rgb(0, 153, 255);
+}
+
+.clock ::after {
+    font-size: 14px;
+}
+#jam::after {
+    content: 'Hours';
+}
+#menit::after {
+    content: 'Minutes';
+}
+#detik::after {
+    content: 'Sec';
+}
+
+.container{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.kotak{
+    text-align: center;
+    margin-left: 30%;
+    width: 450px;
+    border: 4px solid rgb(0, 217, 255);
+    padding: 22px;
+    background-color: rgb(4, 54, 2);
+}
+
+h1{
+    color: white;
+    text-align: center;
+    font-size: 38px;
+}
+.num{
+    display: flex;
+    color: white;
+    margin-left: 5%;
+
+}
+h2{
+    font-size: 60px;
+    margin-inline: 5px;
+}
+button{
+    width: 100px;
+    height: 35px;
+    background-color: rgb(231, 6, 6);
+    color: white;
+    font-size: 24px;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    margin-inline: 8px;
+    cursor: pointer;
+}
+button:hover{
+    border: 2px solid white;
+}
